@@ -169,8 +169,17 @@ p {
 	text-align: center;
 }
 
-.awesome-advantages {
+.awesome-advantages,
+.pricing-card {
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.awesome-advantages__item,
+.pricing-card ul {
+	width: 370px;
 }
 
 .awesome-advantages__icon {
@@ -199,19 +208,8 @@ p {
 	margin-bottom: 79px;
 }
 
-.pricing-card {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-}
-
-.pricing-card ul {
-	width: 370px;
-}
-
 .pricing-card li {
 	background-color: #FFF;
-	border: 1px solid #F5F5F5;
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 14px;
@@ -219,6 +217,14 @@ p {
 	font-size: 18px;
 	font-weight: 400;
 	text-transform: capitalize;
+}
+
+.pricing-card ul {
+	border: 2px solid #F5F5F5;
+}
+
+.pricing-card li:not(:last-child) {
+	border-bottom: 2px solid #F5F5F5;
 }
 
 .pricing-card li:nth-child(1n+1):not(:nth-child(1n+4)) {
