@@ -12,6 +12,9 @@ font-family: 'Raleway', sans-serif;
 	color: #000;
 	list-style-type: none;
 	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .wrapper {
@@ -23,7 +26,6 @@ font-family: 'Raleway', sans-serif;
 .about {
 	padding-top: 99px;
 	padding-bottom: 58px;
-	align-items: center;
 }
 
 .pricing {
@@ -33,9 +35,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 h2 {
-	font-family: 'Raleway', sans-serif;
 	font-size: 36px;
-	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -52,24 +52,18 @@ h4 {
 	font-weight: 700;
 }
 
-p {
-	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-}
-
 .tabs-navigation {
 	display: flex;
 	justify-content: flex-start;
 }
 
 .tabs-navigation__item {
-	width: 203px;
-	height: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	width: 203px;
+	height: 40px;
 }
 
 .tabs-navigation__item--active {
@@ -81,7 +75,7 @@ p {
 .tabs-navigation a {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 14px;
-		font-weight: 400;
+		font-weight: 600;
 		text-transform: uppercase;
 }
 
@@ -90,7 +84,6 @@ p {
 	position: absolute;
 	top: 0;
 	left: 66.5px;
-	/* left: 32.75862068965517%; */
 	width: 70px;
 	height: 100%;
 }
@@ -138,7 +131,6 @@ p {
 .tabs-content__btn a {
 	color: #FFF;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
 	font-weight: 600;
 }
 
@@ -213,10 +205,6 @@ p {
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 14px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: capitalize;
 }
 
 .pricing-card ul {
