@@ -376,18 +376,19 @@ span {
 	width: 170px;
 	height: 1px;
 	background-color: #EC7979;
-	margin: 54px auto 40px auto;
+	margin-top: 54px;
+	margin-bottom: 40px;
 }
 
 .separator--color {
 	background-color: #ffffff;
-	margin-left: 0;
-	margin-right: 0;
 }
 
-.awesome-title > p {
+.section-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin-bottom: 110px;
-	text-align: center;
 }
 
 .awesome-advantages,
@@ -472,4 +473,21 @@ span {
 	position: relative;
 	bottom: 20px;
 	box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.20);
+}
+
+footer {
+	background-color: #000;
+	padding-top: 35px;
+	padding-bottom: 27px;
+}
+
+.copyright-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 27.8px;
+}
+
+.copyright-content p {
+	color: rgba(255, 255, 255, 0.50);
 }
