@@ -50,11 +50,13 @@
 							<a href="#" alt="Download">Download</a>
 						</div>
 					</div>
-					<form action="#" class="features-form">
+					<form action="#" class="title-form">
 						<h4>Try Your <span>FREE</span> Trial Today</h4>
-						<input id="name-field" type="text" name="name" placeholder="Name" required>
-						<input id="email-field" type="email" name="email" placeholder="Email" required>
-						<input id="password-field" type="password" name="password" placeholder="Password" required>
+						<fieldset>
+							<input id="name-field" type="text" name="name" placeholder="Name" required>
+							<input id="email-field" type="email" name="email" placeholder="Email" required>
+							<input id="password-field" type="password" name="password" placeholder="Password" required>
+						</fieldset>
 						<input type="submit" value="Get Started">
 					</form>
 				</div>
@@ -204,7 +206,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="wrapper">
 				<div class="section-title">
 					<h2>what our customers are saying</h2>
@@ -221,15 +223,13 @@
 								quo suscipit.</p>
 						</div>
 						<div class="reviews-list__customer">
-							<img class="customer-avatar" src="" alt="avatar">
+							<img class="customer-avatar" src="img/customer-1.jpg" alt="avatar">
 							<div class="customer-name">
 								<h4>Davis Rhiel Madsen</h4>
 								<p>Manager</p>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="reviews-list">
 					<div class="reviews-list__item">
 						<div class="reviews-list__text">
 							<p>Lorem ipsum dolor sit amet,
@@ -239,27 +239,30 @@
 								quo suscipit.</p>
 						</div>
 						<div class="reviews-list__customer">
-							<img class="customer-avatar" src="" alt="avatar">
+							<img class="customer-avatar" src="img/customer-2.jpg" alt="avatar">
 							<div class="customer-name">
-								<h4>Davis Rhiel Madsen</h4>
+								<h4>Jaydon Rosser</h4>
 								<p>Manager</p>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="reviews-list">
 					<div class="reviews-list__item">
 						<div class="reviews-list__text">
 							<p>Lorem ipsum dolor sit amet,
 								consectetur adipisicing elit. Doloribus
 								accusamus expedita repellat similique
 								odio aspernatur ex, architecto eaque
+								quo suscipit.
+								Lorem ipsum dolor sit amet,
+								consectetur adipisicing elit. Doloribus
+								accusamus expedita repellat similique
+								odio aspernatur ex, architecto eaque
 								quo suscipit.</p>
 						</div>
 						<div class="reviews-list__customer">
-							<img class="customer-avatar" src="" alt="avatar">
+							<img class="customer-avatar" src="img/customer-3.jpg" alt="avatar">
 							<div class="customer-name">
-								<h4>Davis Rhiel Madsen</h4>
+								<h4>Cooper Dorwart Cooper Dorwart</h4>
 								<p>Manager</p>
 							</div>
 						</div>
@@ -271,63 +274,65 @@
 			<div class="wrapper">
 				<div class="section-title">
 					<h2>STYLISH AXURE DESIGN</h2>
-					<div class="separator"></div>
+					<div class="separator separator--color"></div>
 					<p>Use the sections you need, remove the ones you don't.
 						Create gorgeous prototypes faster than ever!</p>
-						<div class="btn-download--features">
-							<a href="#" alt="Download">Download</a>
-						</div>
+					<div class="btn-download--features">
+						<a href="#" alt="Download">Download</a>
+					</div>
 				</div>
 			</div>
 			</div>
 		</section>
-		<section class="contacts">
+		<section class="contacts" id="contact">
 			<div class="wrapper">
 				<div class="section-title">
 					<h2>contact us</h2>
 					<div class="separator"></div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
+				<form action="#" class="contact-form">
+					<fieldset>
+						<input id="name-field" type="text" name="name" placeholder="Name" required>
+						<input id="email-field" type="email" name="email" placeholder="Email" required>
+						<input id="password-field" type="password" name="password" placeholder="Password" required>
+					</fieldset>
+					<textarea id="message-field" name="message" rows="10" placeholder="Message" required></textarea>
+					<input type="submit" value="Send Message">
+				</form>
 			</div>
-			<form action="#" class="features-form">
-				<h4>Try Your <span>FREE</span> Trial Today</h4>
-				<input id="name-field" type="text" name="name" placeholder="Name" required>
-				<input id="email-field" type="email" name="email" placeholder="Email" required>
-				<input id="password-field" type="password" name="password" placeholder="Password" required>
-				<input type="submit" value="Get Started">
-			</form>
 		</section>
 	</main>
 	<footer>
 		<div class="wrapper">
-				<div class="copyright-content">
-					<div class="social-media__icon">
-						<a href="#" alt="social-icon">
-							<img src="img/facebook_icon.svg" alt="social-icon">
-						</a>
-						<a href="#" alt="social-icon">
-							<img src="img/twitter_icon.svg" alt="social-icon">
-						</a>
-						<a href="#" alt="social-icon">
-							<img src="img/linkedin_icon.svg" alt="social-icon">
-						</a>
-						<a href="#" alt="social-icon">
-							<img src="img/pinterest_icon.svg" alt="social-icon">
-						</a>
-						<a href="#" alt="social-icon">
-							<img src="img/instagram_icon.svg" alt="social-icon">
-						</a>
-						<a href="#" alt="social-icon">
-							<img src="img/github_icon.svg" alt="social-icon">
-						</a>
-						<a href="#" alt="social-icon">
-							<img src="img/rss_icon.svg" alt="social-icon">
-						</a>
-					</div>
-					<div class="copyright">
-						<p>© 2015 Axure Themes</p>
-					</div>
+			<div class="copyright-content">
+				<div class="social-media__icon">
+					<a href="#" alt="social-icon">
+						<img src="img/facebook_icon.svg" alt="social-icon">
+					</a>
+					<a href="#" alt="social-icon">
+						<img src="img/twitter_icon.svg" alt="social-icon">
+					</a>
+					<a href="#" alt="social-icon">
+						<img src="img/linkedin_icon.svg" alt="social-icon">
+					</a>
+					<a href="#" alt="social-icon">
+						<img src="img/pinterest_icon.svg" alt="social-icon">
+					</a>
+					<a href="#" alt="social-icon">
+						<img src="img/instagram_icon.svg" alt="social-icon">
+					</a>
+					<a href="#" alt="social-icon">
+						<img src="img/github_icon.svg" alt="social-icon">
+					</a>
+					<a href="#" alt="social-icon">
+						<img src="img/rss_icon.svg" alt="social-icon">
+					</a>
 				</div>
+				<div class="copyright">
+					<p>© 2015 Axure Themes</p>
+				</div>
+			</div>
 		</div>
 	</footer>
 
