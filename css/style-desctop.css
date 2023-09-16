@@ -54,13 +54,23 @@ header {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 10px;
+	/* justify-content: center; */
 }
 
 .site-nav__item a {
+	display: block;
 	color: #FFFFFF;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 600;
+}
+
+.site-nav__item a:hover {
+	background-color: #EC7979;
+}
+
+.site-nav__item a:active {
+	background-color: #AB4949;
 }
 
 .features-form h4,
@@ -124,6 +134,15 @@ span {
 	border-radius: 0 0 10px 10px;
 	width: 100%;
 	padding: 20px 0;
+}
+
+.features .features-form input[type=submit]:hover {
+	background-color: #AB4949;
+}
+
+.features .features-form input[type=submit]:active {
+	box-shadow: 0px 0px 10px 0px #AB4949 inset;
+	background-color: #EC7979;
 }
 
 .features-form input:not(input[type=submit])::placeholder {
@@ -300,7 +319,7 @@ span {
 	margin-bottom: 68px;
 }
 
-.btn-download a {
+.btn-download--features a {
 	display: block;
 	width: 270px;
 	text-align: center;
@@ -312,11 +331,38 @@ span {
 	margin: 42px 0;
 }
 
-.btn-download--color a {
+.btn-download--features a:hover {
+	color: #EC7979;
+	border: 2px solid #EC7979;
+}
+
+.btn-download--features a:active {
+	color: #FFF;
+	border: 2px solid #AB4949;
+	background: #AB4949;
+}
+
+.btn-download--about a {
+	display: block;
+	width: 270px;
+	text-align: center;
+	padding: 17px 0;
+	color: #FFF;
 	background-color: #EC7979;
 	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 	margin-top: 27px;
 	margin-bottom: 54px;
+}
+
+.btn-download--about a:hover {
+	background-color: #AB4949;
+}
+
+.btn-download--about a:active {
+	background-color: #EC7979;
+	box-shadow: 0px 0px 10px 0px #AB4949 inset;
 }
 
 .tabs-content__img {
