@@ -548,11 +548,7 @@ footer {
 }
 
 .reviews-list__text p {
-	display: -webkit-box;
 	color: #86878B;
-	-webkit-line-clamp: 5;
-	overflow: hidden;
-	-webkit-box-orient: vertical;
 }
 
 .reviews-list__customer {
