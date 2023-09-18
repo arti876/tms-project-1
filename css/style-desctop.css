@@ -129,17 +129,17 @@ input:not(input[type=submit]):focus::placeholder,
 header {
 	background-color: #000;
 	width: 100%;
-	/* position: fixed;
-	z-index: 1000; */
+	position: fixed;
+	z-index: 1000;
 }
 
-/* .features,
+.features,
 .about,
 .pricing,
 .reviews,
 .contact {
 	scroll-margin-top: 75px;
-} */
+}
 
 .main-nav {
 	display: flex;
@@ -516,9 +516,11 @@ fieldset {
 	gap: 30px;
 }
 
-.reviews-list__customer img {
+.customer-avatar img {
 	width: 70px;
 	height: 70px;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
 .design,
