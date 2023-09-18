@@ -128,50 +128,44 @@ input:not(input[type=submit]):focus::placeholder,
 
 header {
 	background-color: #000;
-	padding-top: 22.46px;
-	padding-bottom: 21.85px;
-	position: fixed;
 	width: 100%;
-	z-index: 1000;
+	/* position: fixed;
+	z-index: 1000; */
 }
 
-.features,
+/* .features,
 .about,
 .pricing,
 .reviews,
 .contact {
-	scroll-margin-top: 80px;
-}
+	scroll-margin-top: 75px;
+} */
 
 .main-nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* gap: 15px; */
-}
-
-/* .logo {
-	max-width: 86.8px;
-	flex-shrink: 0.3;
 }
 
 .logo img {
-	width: 100%;
-} */
+	max-width: 86.8px;
+	min-width: 64.81px;
+}
 
 .site-nav {
 	display: flex;
-	justify-content: flex-end;
-	width: 570px;
-	/* flex-wrap: wrap; */
 }
 
 .site-nav__item a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: #FFFFFF;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 600;
-	padding: 32px 28px 29px 28px;
+	width: 113px;
+	height: 75px;
 }
 
 .site-nav__item a:hover {
@@ -198,13 +192,11 @@ header {
 	justify-content: space-between;
 	align-items: flex-start;
 	gap: 30px;
-	/* flex-wrap: wrap; */
 }
 
 .features-title {
 	display: flex;
 	flex-direction: column;
-	/* align-items: flex-start; */
 	width: 670px;
 }
 
@@ -309,8 +301,6 @@ fieldset {
 	display: flex;
 	justify-content: space-between;
 	width: 670px;
-	/* gap: 30px; */
-	/* flex-wrap: wrap; */
 }
 
 .about {
@@ -320,7 +310,6 @@ fieldset {
 
 .tabs-navigation {
 	display: flex;
-	/* justify-content: flex-start; */
 	margin-bottom: -1px;
 }
 
@@ -351,7 +340,6 @@ fieldset {
 .tabs-content {
 	display: flex;
 	justify-content: flex-end;
-	/* flex-wrap: wrap; */
 	gap: 15px;
 	border: 1px solid #C6CBCD;
 	margin-bottom: 104px;
@@ -399,7 +387,6 @@ fieldset {
 .pricing-card {
 	display: flex;
 	justify-content: space-between;
-	/* flex-wrap: wrap; */
 	gap: 30px;
 	width: 100%;
 	margin-top: 110px;
