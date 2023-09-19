@@ -524,6 +524,8 @@ fieldset {
 	height: 70px;
 	border-radius: 50%;
 	object-fit: cover;
+	position: relative;
+	top: -11px;
 }
 
 .design,
@@ -593,13 +595,10 @@ footer {
 	color: rgba(255, 255, 255, 0.50);
 }
 
-/* .customer-name {
+.customer-name {
 	display: flex;
 	flex-direction: column;
-} */
-
-.customer-name h4 {
-	margin-bottom: 25px;
+	gap: 25px;
 }
 
 .copyright-content img {
