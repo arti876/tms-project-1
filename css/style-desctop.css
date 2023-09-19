@@ -229,6 +229,7 @@ header {
 
 .btn-download--features a {
 	border: 2px solid #FFF;
+	margin-top: 73px;
 }
 
 .btn-download--features a:hover {
@@ -390,13 +391,13 @@ fieldset {
 .awesome-advantages,
 .pricing-card {
 	display: flex;
-	/* justify-content: space-between; */
 	gap: 30px;
-	width: calc(100% / 3 - 60px);
 	margin-top: 110px;
+	flex-wrap: wrap;
 }
 
 .awesome-advantages__item {
+	width: calc((100% - 60px) / 3);
 	text-align: center;
 }
 
@@ -424,7 +425,7 @@ fieldset {
 
 .pricing-card__item {
 	border: 2px solid #F5F5F5;
-	flex-grow: 1;
+	width: calc((100% - 60px) / 3);
 }
 
 .pricing-card__item:hover {
@@ -474,13 +475,13 @@ fieldset {
 
 .reviews-list {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 	gap: 30px;
 	margin-top: 83px;
 }
 
 .reviews-list__item {
-	width: 370px;
+	width: calc((100% - 60px) / 3);
 }
 
 .reviews-list__text {
@@ -557,7 +558,7 @@ fieldset {
 
 .contact-form fieldset,
 .contact-form textarea {
-	width: 570px;
+	width: calc((100% - 30px) / 2);
 }
 
 .contact-form textarea {
@@ -575,7 +576,7 @@ fieldset {
 .contact-form input[type="submit"] {
 	width: 370px;
 	border: none;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 footer {
