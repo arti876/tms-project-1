@@ -170,7 +170,7 @@ header {
 	font-size: 14px;
 	font-weight: 600;
 	width: 113px;
-	height: 75px;
+	padding: 28px 0;
 }
 
 .site-nav__item a:hover {
@@ -229,7 +229,6 @@ header {
 
 .btn-download--features a {
 	border: 2px solid #FFF;
-	margin-top: 73px;
 }
 
 .btn-download--features a:hover {

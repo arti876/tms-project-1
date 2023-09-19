@@ -18,7 +18,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
-	width: 1022px;
+	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -53,7 +53,7 @@ span {
 	color: #EC7979;
 }
 
-input:not(input[type=submit]) {
+fieldset input {
 	min-height: 38px;
 	border: none;
 	border-bottom: 1px solid #BDBDBD;
@@ -63,9 +63,32 @@ input:not(input[type=submit]) {
 	padding-right: 5px;
 }
 
+fieldset input::placeholder,
+.contact-form textarea::placeholder {
+	color: #BDBDBD;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	transform: translateX(-5px) translateY(-10px);
+	opacity: 1;
+	transition: all 300ms;
+}
+
+fieldset input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+	opacity: 0;
+}
+
+fieldset input:focus,
+.contact-form textarea:focus {
+	border-radius: 5px;
+	border: 1px solid #BDBDBD;
+	outline: none;
+}
+
 input[type=submit] {
 	color: #FFF;
 	text-align: center;
+	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	font-weight: 600;
@@ -82,28 +105,6 @@ input[type=submit]:active {
 	background-color: #EC7979;
 }
 
-input:not(input[type=submit])::placeholder,
-.contact-form textarea::placeholder {
-	color: #BDBDBD;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	transform: translateX(-5px) translateY(-10px);
-	opacity: 1;
-	transition: all 300ms;
-}
-
-input:not(input[type=submit]):focus,
-.contact-form textarea:focus {
-	border-radius: 5px;
-	border: 1px solid #BDBDBD;
-	outline: none;
-}
-
-input:not(input[type=submit]):focus::placeholder,
-.contact-form textarea:focus::placeholder {
-	opacity: 0;
-}
-
 .section-title {
 	display: flex;
 	flex-direction: column;
@@ -118,28 +119,34 @@ input:not(input[type=submit]):focus::placeholder,
 	width: 170px;
 	height: 1px;
 	background-color: #EC7979;
-	/* margin-top: 54px;
-	margin-bottom: 40px; */
+	margin-top: 54px;
+	margin-bottom: 40px;
 }
 
 .separator--color {
 	background-color: #ffffff;
 }
 
-header {
-	background-color: #000;
-	width: 100%;
-	/* position: fixed;
-	z-index: 1000; */
+.separator--margin {
+	margin-top: 41.49px;
+	margin-bottom: 31px;
 }
 
-/* .features,
+header {
+	background-color: #000;
+	background-color: #660000;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+}
+
+.features,
 .about,
 .pricing,
 .reviews,
 .contact {
 	scroll-margin-top: 75px;
-} */
+}
 
 .main-nav {
 	display: flex;
@@ -162,9 +169,11 @@ header {
 	align-items: center;
 	color: #FFFFFF;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 	font-weight: 600;
 	width: 113px;
-	height: 75px;
+
+	padding: 28px 0;
 }
 
 .site-nav__item a:hover {
@@ -182,42 +191,41 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding-top: 137px;
-	padding-bottom: 106px;
+	padding-top: 306px;
+	padding-bottom: 185px;
 }
 
 .features-content {
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
-	gap: 30px;
-	/* min-width: calc((100% - 30px) / 2); */
+	align-items: flex-start;
+	gap: 36.36px;
 }
 
 .features-title {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	min-height: 407.05px;
 	width: 454.358px;
 }
 
 .features-title img {
-	width: 115.28px;
-	/* margin-bottom: 72.88px; */
+	width: 115.285px;
+	margin-bottom: 54.08px;
 }
 
 .features-title p {
 	color: #FFF;
-	width: 270px;
+	width: 183.099px;
+	margin-bottom: 31.32px;
 }
 
 .btn-download a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 183.099px;
-	height: 50px;
+	width: 231.87px;
+	padding: 16.5px 0;
+	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: #FFF;
@@ -225,6 +233,8 @@ header {
 
 .btn-download--features a {
 	border: 2px solid #FFF;
+	margin-top: 0;
+	width: 183.1px;
 }
 
 .btn-download--features a:hover {
@@ -261,9 +271,8 @@ fieldset {
 	background-color: #ffffff;
 	border-radius: 10px;
 	width: 398px;
-	min-height: 450px;
-	padding: 29px 50px 0 50px;
-	/* flex-shrink: 0; */
+	height: 450px;
+	padding: 33px 50px 0 50px;
 }
 
 .title-form input[type=submit] {
@@ -342,7 +351,7 @@ fieldset {
 .tabs-content {
 	display: flex;
 	justify-content: flex-end;
-	gap: 15px;
+	gap: 30px;
 	border: 1px solid #C6CBCD;
 	margin-bottom: 104px;
 }
@@ -352,7 +361,6 @@ fieldset {
 	flex-direction: column;
 	align-items: flex-start;
 	width: 600px;
-	padding: 0 15px;
 }
 
 .tabs-content__abut-tabs p {
@@ -388,14 +396,13 @@ fieldset {
 .awesome-advantages,
 .pricing-card {
 	display: flex;
-	justify-content: space-between;
 	gap: 30px;
-	width: 100%;
 	margin-top: 110px;
+	flex-wrap: wrap;
 }
 
 .awesome-advantages__item {
-	width: 370px;
+	width: calc((100% - 60px) / 3);
 	text-align: center;
 }
 
@@ -421,12 +428,12 @@ fieldset {
 	background-color: #F5F5F5;
 }
 
-.pricing-card ul {
+.pricing-card__item {
 	border: 2px solid #F5F5F5;
-	width: 370px;
+	width: calc((100% - 60px) / 3);
 }
 
-.pricing-card ul:hover {
+.pricing-card__item:hover {
 	position: relative;
 	bottom: 20px;
 	box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.20);
@@ -450,6 +457,7 @@ fieldset {
 
 .pricing .pricing-card li:nth-child(1n+3) {
 	color: #86878B;
+	font-size: 18px;
 }
 
 .pricing-card li:nth-child(1) {
@@ -473,13 +481,13 @@ fieldset {
 
 .reviews-list {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 	gap: 30px;
 	margin-top: 83px;
 }
 
 .reviews-list__item {
-	width: 370px;
+	width: calc((100% - 60px) / 3);
 }
 
 .reviews-list__text {
@@ -514,13 +522,17 @@ fieldset {
 
 .reviews-list__customer {
 	display: flex;
-	align-items: stretch;
+	align-items: center;
 	gap: 30px;
 }
 
-.reviews-list__customer img {
+.customer-avatar img {
 	width: 70px;
 	height: 70px;
+	border-radius: 50%;
+	object-fit: cover;
+	position: relative;
+	top: -11px;
 }
 
 .design,
@@ -552,7 +564,7 @@ fieldset {
 
 .contact-form fieldset,
 .contact-form textarea {
-	width: 570px;
+	width: calc((100% - 30px) / 2);
 }
 
 .contact-form textarea {
@@ -570,7 +582,8 @@ fieldset {
 .contact-form input[type="submit"] {
 	width: 370px;
 	border: none;
-	margin-top: 50px;
+	margin-top: 20px;
+	font-size: 18px;
 }
 
 footer {
@@ -593,7 +606,7 @@ footer {
 .customer-name {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	gap: 25px;
 }
 
 .copyright-content img {
