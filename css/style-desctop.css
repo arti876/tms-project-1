@@ -304,8 +304,8 @@ fieldset {
 
 .social-media__icon {
 	display: flex;
-	justify-content: space-between;
-	width: 670px;
+	justify-content: center;
+	gap: 32.8px;
 }
 
 .about {
