@@ -443,20 +443,20 @@ fieldset {
 
 .pricing-card__item {
 	border: 2px solid #F5F5F5;
-	width: calc((100% - 60px) / 3);
+	width: calc((100% - 40px) / 3);
 }
 
 .pricing-card__item:hover {
 	position: relative;
-	bottom: 20px;
+	bottom: 17.74px;
 	box-shadow: 0px 4px 10px rgba(51, 51, 51, 0.20);
 }
 
 .pricing-card li {
 	background-color: #FFF;
 	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 14px;
+	padding-top: 12px;
+	padding-bottom: 11.34px;
 }
 
 .pricing-card li:not(:last-child) {
@@ -477,46 +477,46 @@ fieldset {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
-	padding-top: 14px;
-	padding-bottom: 13px;
+	padding-top: 10px;
+	padding-bottom: 10.21px;
 }
 
 .pricing-card li:nth-child(2) {
 	font-size: 36px;
 	font-weight: 700;
-	padding: 28px 0;
+	padding-top: 23px;
+	padding-bottom: 23.68px;
 }
 
 .reviews {
-	padding-top: 104px;
-	padding-bottom: 64px;
+	padding-top: 96px;
+	padding-bottom: 57px;
 }
 
 .reviews-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 30px;
-	margin-top: 83px;
+	gap: 20px;
+	margin-top: 32px;
 }
 
 .reviews-list__item {
-	width: calc((100% - 60px) / 3);
+	width: calc((100% - 40px) / 3);
 }
 
 .reviews-list__text {
 	background-color: #E2E2E2;
 	border-radius: 10px;
-	padding: 38px 24px;
+	padding: 50px 32px;
 	margin-bottom: 66px;
 	text-align: center;
 	position: relative;
-	height: 180px;
 }
 
 .reviews-list__text::before {
 	position: absolute;
 	content: "";
-	left: 70px;
+	left: 59.97px;
 	bottom: -20px;
 	width: 0;
 	height: 0;
@@ -536,21 +536,27 @@ fieldset {
 .reviews-list__customer {
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: 22.54px;
 }
 
 .customer-avatar img {
-	width: 70px;
-	height: 70px;
+	width: 63px;
+	height: 63px;
 	border-radius: 50%;
 	object-fit: cover;
 	position: relative;
-	top: -11px;
+	top: 0;
+}
+
+.customer-name {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
 }
 
 .design,
 .contacts {
-	padding-top: 104px;
+	padding-top: 96px;
 	padding-bottom: 50px;
 }
 
@@ -567,17 +573,22 @@ fieldset {
 	color: #FFF;
 }
 
+.design .btn-download a{
+	width: 318px;
+	margin-top: 32px;
+}
+
 .contact-form {
 	display: flex;
 	justify-content: center;
-	gap: 30px;
+	gap: 20px;
 	flex-wrap: wrap;
-	margin-top: 89px;
+	margin-top: 72px;
 }
 
 .contact-form fieldset,
 .contact-form textarea {
-	width: calc((100% - 30px) / 2);
+	width: calc((100% - 20px) / 2);
 }
 
 .contact-form textarea {
@@ -614,12 +625,6 @@ footer {
 
 .copyright-content p {
 	color: rgba(255, 255, 255, 0.50);
-}
-
-.customer-name {
-	display: flex;
-	flex-direction: column;
-	gap: 25px;
 }
 
 .copyright-content img {

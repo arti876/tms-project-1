@@ -496,7 +496,6 @@ fieldset {
 	margin-bottom: 66px;
 	text-align: center;
 	position: relative;
-	height: 180px;
 }
 
 .reviews-list__text::before {
@@ -551,6 +550,11 @@ fieldset {
 .design h2,
 .design p {
 	color: #FFF;
+}
+
+.design .btn-download a{
+	width: 370px;
+	margin-top: 73px;
 }
 
 .contact-form {
