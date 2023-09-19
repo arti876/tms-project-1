@@ -387,8 +387,7 @@ fieldset {
 	max-width: 470px;
 }
 
-.awesome-advantages,
-.pricing-card {
+.awesome-advantages {
 	display: flex;
 	gap: 30px;
 	margin-top: 110px;
@@ -420,6 +419,13 @@ fieldset {
 	padding-top: 104px;
 	padding-bottom: 50px;
 	background-color: #F5F5F5;
+}
+
+.pricing-card {
+	display: flex;
+	gap: 30px;
+	margin-top: 79px;
+	flex-wrap: wrap;
 }
 
 .pricing-card__item {
