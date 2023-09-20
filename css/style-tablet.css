@@ -17,8 +17,20 @@ font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 }
 
+#menu__toggle {
+	display: none;
+}
+
+.menu-box {
+	display: none;
+}
+
+.scroll-reviews {
+	display: none;
+}
+
 .wrapper {
-	max-width: 1200px;
+	max-width: 1022px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
