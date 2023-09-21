@@ -1,2 +1,56 @@
-	<link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/style-tablet.css">
-	<link rel="stylesheet" media="screen and (max-width: 320px)" href="css/style-mobile.css">
+
+
+<!-- !index.html -->
+<link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/style-tablet.css">
+<link rel="stylesheet" media="screen and (max-width: 320px)" href="css/style-mobile.css">
+<!-- !menu-toogle -->
+	<input id="menu__toggle" type="checkbox">
+	<label class="menu__btn" for="menu__toggle">
+		<span></span>
+	</label>
+	<div class="menu-box">
+		<div class="menu-box__item">
+			<a href="#features">Features</a>
+		</div>
+		<div class="menu-box__item">
+			<a href="#about">About</a>
+		</div>
+		<div class="menu-box__item">
+			<a href="#pricing">Pricing</a>
+		</div>
+		<div class="menu-box__item">
+			<a href="#reviews">Reviews</a>
+		</div>
+		<div class="menu-box__item">
+			<a href="#contact">Contact</a>
+		</div>
+	</div>
+<!-- !menu-toogle -->
+
+<!-- !scroll-reviews -->
+	<div class="scroll-reviews">
+		<div class="scroll-reviews__item">
+			<a href="#scroll-reviews__item"></a>
+		</div>
+		<div class="scroll-reviews__item">
+			<a href="#scroll-reviews__item"></a>
+		</div>
+		<div class="scroll-reviews__item">
+			<a href="#scroll-reviews__item"></a>
+		</div>
+	</div>
+<!-- !scroll-reviews -->
+
+<!-- !style.css -->
+	#menu__toggle {
+		display: none;
+	}
+
+	.menu-box {
+		display: none;
+	}
+
+	.scroll-reviews {
+		display: none;
+	}
+<!-- !style.css -->
