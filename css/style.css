@@ -17,7 +17,6 @@ font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 }
 
-
 .wrapper {
 	max-width: 1200px;
 	padding: 0 15px;
@@ -153,9 +152,21 @@ header {
 	align-items: center;
 }
 
+.logo {
+	width: 86.8px;
+	height: 30.69px;
+	flex-shrink: 0;
+}
+
+.logo.logo-feaures {
+	width: 170px;
+	height: 55px;
+}
+
 .logo img {
-	max-width: 86.8px;
-	min-width: 64.81px;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 .site-nav {
@@ -206,8 +217,7 @@ header {
 	width: 670px;
 }
 
-.features-title img {
-	width: 170px;
+.features-title .logo {
 	margin-bottom: 72.88px;
 }
 
@@ -303,11 +313,15 @@ fieldset {
 	color: #86878B;
 }
 
+/* ?.social-media__icon img */
+
 .social-media__icon {
 	display: flex;
 	justify-content: center;
 	gap: 32.8px;
 }
+
+/* ?.social-media__icon img */
 
 .about {
 	padding-top: 99px;
@@ -383,9 +397,17 @@ fieldset {
 	box-shadow: 0px 0px 10px 0px #AB4949 inset;
 }
 
+.tabs-content__img {
+	width: 470px;
+	height: 500px;
+	overflow: hidden;
+}
+
 .tabs-content__img img {
-	display: block;
-	max-width: 470px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 .awesome-advantages {
@@ -410,6 +432,12 @@ fieldset {
 	border: 1px solid #EC7979;
 	margin: 0 auto;
 	margin-bottom: 73px;
+}
+
+.awesome-advantages__icon img {
+	width: 75%;
+	height: 75%;
+	object-fit: contain;
 }
 
 .awesome-advantages__item h4 {
@@ -503,12 +531,12 @@ fieldset {
 	position: absolute;
 	content: "";
 	left: 70px;
-	bottom: -20px;
+	top: 100%;
 	width: 0;
 	height: 0;
-	border: 20px solid #E2E2E2;
+	border: 15px solid #E2E2E2;
 	border-top-color: #E2E2E2;
-	border-top-width: 30px;
+	border-top-width: 20px;
 	border-bottom-width: 0;
 	border-left-color: transparent;
 	border-right-color: transparent;
@@ -521,17 +549,22 @@ fieldset {
 
 .reviews-list__customer {
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	gap: 30px;
 }
 
-.customer-avatar img {
+.customer-avatar {
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
+	overflow: hidden;
+}
+
+.customer-avatar img {
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
-	position: relative;
-	top: -11px;
+	object-position: center;
 }
 
 .design,
