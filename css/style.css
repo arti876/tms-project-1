@@ -153,8 +153,8 @@ header {
 }
 
 .logo {
+	display: flex;
 	width: 86.8px;
-	height: 30.69px;
 	flex-shrink: 0;
 }
 
