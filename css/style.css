@@ -27,13 +27,43 @@ h1 {
 	color: #FFF;
 	font-size: 48px;
 	font-weight: 500;
-	text-transform: uppercase;
+	padding-bottom: 55.12px;
+	margin-bottom: 42px;
 }
 
 h2 {
 	font-size: 36px;
-	text-transform: uppercase;
 	text-align: center;
+	padding-bottom: 54px;
+	margin-bottom: 40px;
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+	position: relative;
+}
+
+h1::before,
+h2::before {
+	position: absolute;
+	content: "";
+	width: 170px;
+	height: 1px;
+	background-color: #EC7979;
+	top: 100%;
+	left: 50%;
+	margin-left: -85px;
+}
+
+h1::before {
+	background-color: #ffffff;
+	left: 0;
+	margin-left: 0;
+}
+
+.design h2::before {
+	background-color: #ffffff;
 }
 
 h3 {
@@ -112,23 +142,6 @@ input[type=submit]:active {
 
 .section-title p {
 	color: #86878B;
-}
-
-.separator {
-	width: 170px;
-	height: 1px;
-	background-color: #EC7979;
-	margin-top: 54px;
-	margin-bottom: 40px;
-}
-
-.separator--color {
-	background-color: #ffffff;
-}
-
-.separator--margin {
-	margin-top: 55.12px;
-	margin-bottom: 42px;
 }
 
 header {
