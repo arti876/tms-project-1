@@ -160,7 +160,6 @@ header {
 
 .logo.logo-feaures {
 	width: 170px;
-	height: 55px;
 }
 
 .logo img {
@@ -313,15 +312,29 @@ fieldset {
 	color: #86878B;
 }
 
-/* ?.social-media__icon img */
-
 .social-media__icon {
 	display: flex;
 	justify-content: center;
-	gap: 32.8px;
+	gap: 30px;
 }
 
-/* ?.social-media__icon img */
+.social-media__icon a {
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+}
+
+.social-media__icon img {
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+}
+
+.social-media__icon.social-media__icon--copyright a {
+	width: 53.2px;
+	height: 53.2px;
+}
 
 .about {
 	padding-top: 99px;
@@ -398,16 +411,13 @@ fieldset {
 }
 
 .tabs-content__img {
-	width: 470px;
-	height: 500px;
-	overflow: hidden;
+	max-width: 470px;
 }
 
 .tabs-content__img img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: center;
 }
 
 .awesome-advantages {
@@ -564,7 +574,6 @@ fieldset {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	object-position: center;
 }
 
 .design,
@@ -643,8 +652,4 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-}
-
-.copyright-content img {
-	width: 53.2px;
 }
