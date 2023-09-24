@@ -491,7 +491,7 @@ header {
 .pricing-card__item {
 	border: 2px solid #F5F5F5;
 	width: calc((100% - 60px) / 3);
-	transition-duration: .8s;
+	transition-duration: .3s;
 }
 
 .pricing-card__item:hover {
