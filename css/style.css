@@ -259,6 +259,7 @@ header {
 	font-weight: 600;
 	width: 113px;
 	padding: 28px 0;
+	transition-duration: 0.3s;
 }
 
 .site-nav__item a:hover {
@@ -368,6 +369,9 @@ header {
 .copyright-content .social-media__icon a {
 	width: 53.2px;
 	height: 53.2px;
+}
+
+.copyright-content .social-media__icon svg {
 	transform: scale(.858)
 }
 
@@ -487,6 +491,7 @@ header {
 .pricing-card__item {
 	border: 2px solid #F5F5F5;
 	width: calc((100% - 60px) / 3);
+	transition-duration: .8s;
 }
 
 .pricing-card__item:hover {
