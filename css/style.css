@@ -222,7 +222,7 @@ header {
 	scroll-margin-top: 75px;
 }
 
-.main-nav {
+.wrapper__header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -234,11 +234,15 @@ header {
 	flex-shrink: 0;
 }
 
-.main-nav .logo {
+.header__logo {
+	width: 86.8px;
+}
+
+.header__logo {
 	transform: translateX(-55px);
 }
 
-.logo-feaures {
+.features__logo {
 	width: 170px;
 }
 
@@ -247,11 +251,11 @@ header {
 	height: 100%;
 }
 
-.site-nav {
+.menu__list {
 	display: flex;
 }
 
-.site-nav__item a {
+.menu__item a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -264,11 +268,11 @@ header {
 	transition-duration: 0.3s;
 }
 
-.site-nav__item a:hover {
+.menu__item a:hover {
 	background-color: #EC7979;
 }
 
-.site-nav__item a:active {
+.menu__item a:active {
 	background-color: #AB4949;
 }
 
