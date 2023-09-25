@@ -8,23 +8,23 @@
 	<label class="menu__btn" for="menu__toggle">
 		<span></span>
 	</label>
-	<div class="menu-box">
-		<div class="menu-box__item">
+	<ul class="menu-box">
+		<li class="menu-box__item">
 			<a href="#features">Features</a>
-		</div>
-		<div class="menu-box__item">
+		</li>
+		<li class="menu-box__item">
 			<a href="#about">About</a>
-		</div>
-		<div class="menu-box__item">
+		</li>
+		<li class="menu-box__item">
 			<a href="#pricing">Pricing</a>
-		</div>
-		<div class="menu-box__item">
+		</li>
+		<li class="menu-box__item">
 			<a href="#reviews">Reviews</a>
-		</div>
-		<div class="menu-box__item">
+		</li>
+		<li class="menu-box__item">
 			<a href="#contact">Contact</a>
-		</div>
-	</div>
+		</li>
+	</ul>
 <!-- !menu-toogle -->
 
 <!-- !scroll-reviews -->

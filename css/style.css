@@ -136,6 +136,7 @@ input[type=submit] {
 	font-weight: 600;
 	background-color: #EC7979;
 	padding: 20px 0;
+	transition-duration: .3s;
 }
 
 input[type=submit]:hover {
@@ -156,6 +157,7 @@ input[type=submit]:active {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: #FFF;
+	transition-duration: .3s;
 }
 
 .design .btn-download a{
@@ -710,7 +712,7 @@ footer {
 }
 
 .social-media__icon a:nth-child(5):hover {
-	transform: translateX(15px);
+	transform: rotate(-180deg);
 }
 .social-media__icon a:nth-child(5):hover path {
 	fill: #a13232;
