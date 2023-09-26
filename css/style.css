@@ -94,7 +94,7 @@ span {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: 30px;
+	gap: 33px;
 }
 
 .title-form__input-list input,
