@@ -46,27 +46,26 @@
 						<img src="img/logo-section.svg" alt="logo">
 					</div>
 					<h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-					<p>Lorem ipsum dolor sit amet,
-						<br>consectetur adipiscing elit
-					</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 					<div class="btn-download">
 						<a href="#download" alt="Download">Download</a>
 					</div>
 				</div>
-				<form action="#" class="title-form" method="post" name="title-form">
-					<h4>Try Your <span>FREE</span> Trial Today</h4>
-					<fieldset>
-						<input id="name-field" type="text" name="name" placeholder="Name" required>
-						<input id="email-field" type="email" name="email" placeholder="Email" required>
-						<input id="password-field" type="password" name="password" placeholder="Password" required>
-					</fieldset>
-					<input type="submit" value="Get Started">
+				<form class="title-form" action="#" method="#" name="title-form">
+					<div class="title-form__container">
+						<h4>Try Your <span>FREE</span> Trial Today</h4>
+						<div class="title-form__input-list form__input-list">
+							<input id="name-field" type="text" name="name" placeholder="Name" required>
+							<input id="email-field" type="email" name="email" placeholder="Email" required>
+							<input id="password-field" type="password" name="password" placeholder="Password" required>
+						</div>
+					</div>
+					<button type="submit" name="get-started">Get Started</button>
 				</form>
 			</div>
 		</section>
 		<section class="social-media">
-			<div class="wrapper">
-				<div class="social-media__content">
+			<div class="wrapper__social-media wrapper">
 					<div class="social-media__title">
 						<h4>Social Media</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -136,11 +135,10 @@
 							</svg>
 						</a>
 					</div>
-				</div>
 			</div>
 		</section>
 		<section class="about" id="about">
-			<div class="wrapper">
+			<div class="wrapper__about wrapper">
 				<div class="tabs-navigation">
 					<div class="tabs-navigation__item tabs-navigation__item--active">
 						<a href="#tab" alt="tab-1">tab 1</a>
@@ -204,7 +202,7 @@
 			</div>
 		</section>
 		<section class="pricing" id="pricing">
-			<div class="wrapper">
+			<div class="wrapper__pricing wrapper">
 				<div class="section-title">
 					<h2>pricing options</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -247,7 +245,7 @@
 			</div>
 		</section>
 		<section class="reviews" id="reviews">
-			<div class="wrapper">
+			<div class="wrapper__reviews wrapper">
 				<div class="section-title">
 					<h2>what our customers are saying</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -311,7 +309,7 @@
 				</div>
 		</section>
 		<section class="design">
-			<div class="wrapper">
+			<div class="wrapper__design wrapper">
 				<div class="section-title">
 					<h2>STYLISH AXURE DESIGN</h2>
 					<p>Use the sections you need, remove the ones you don't.
@@ -324,26 +322,37 @@
 			</div>
 		</section>
 		<section class="contacts" id="contact">
-			<div class="wrapper">
+			<div class="wrapper__contacts wrapper">
 				<div class="section-title">
 					<h2>contact us</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
-				<form action="#" class="contact-form" method="post" name="contact-form">
-					<fieldset>
-						<input id="name-field" type="text" name="name" placeholder="Name" required>
-						<input id="email-field" type="email" name="email" placeholder="Email" required>
-						<input id="password-field" type="password" name="password" placeholder="Password" required>
-					</fieldset>
-					<textarea id="message-field" name="message" rows="8" placeholder="Message" required></textarea>
-					<input type="submit" value="Send Message">
+				<form class="contact-form" action="#" method="#" name="contact-form">
+					<div class="contact-form__input-list">
+						<div class="contact-form__item">
+							<label for="contact-form__name">Text</label>
+							<input id="contact-form__name" type="text" name="name" required>
+						</div>
+						<div class="contact-form__item">
+							<label for="contact-form__email">Email</label>
+							<input id="contact-form__email" type="email" name="email" required>
+						</div>
+						<div class="contact-form__item">
+							<label for="contact-form__password">Password</label>
+							<input id="contact-form__password" type="password" name="password" required>
+						</div>
+					</div>
+					<div class="contact-form__message">
+						<label for="contact-form__message">Message</label>
+						<textarea id="contact-form__message" name="message" required></textarea>
+					</div>
+					<button type="submit" name="send-message">Send Message</button>
 				</form>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<div class="wrapper">
-			<div class="copyright-content">
+		<div class="wrapper__footer wrapper">
 				<div class="social-media__icon social-media__icon--copyright">
 					<a href="#social" alt="social-icon">
 						<!-- <img src="img/facebook_icon.svg" alt="social-icon"> -->
@@ -411,7 +420,6 @@
 				<div class="copyright">
 					<p>© 2015 Axure Themes</p>
 				</div>
-			</div>
 		</div>
 	</footer>
 
