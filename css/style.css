@@ -312,7 +312,7 @@ header {
 	width: 270px;
 }
 
-.title-form {
+.main-form {
 	display: flex;
 	flex-direction: column;
 	min-height: 450px;
@@ -780,7 +780,7 @@ footer {
 
 
 @media (max-width: 1135px) {
-	.title-form{
+	.main-form{
 		min-width: 444px;
 	}
 }
@@ -977,7 +977,7 @@ footer {
 }
 
 @media (max-width: 941px) {
-	.title-form{
+	.main-form{
 		min-width: 358px;
 	}
 	.tabs-content__abut-tabs{
@@ -992,7 +992,7 @@ footer {
 	.features-title{
 		max-width: 350px;
 	}
-	.title-form{
+	.main-form{
 		min-width: 358px;
 	}
 }
@@ -1128,7 +1128,7 @@ footer {
 		.features .btn-download a{
 			width: 100%;
 		}
-		.title-form{
+		.main-form{
 			min-width: 100%;
 			min-height: 381px;
 		}
@@ -1267,8 +1267,15 @@ footer {
 			gap: 0;
 		}
 		.reviews-list::-webkit-scrollbar {
-			display: none;
+			height: 7px;
 		}
+		.reviews-list::-webkit-scrollbar-track {
+			background-color: #f1f1f1
+		}
+		.reviews-list::-webkit-scrollbar-thumb {
+			background-color: #d4d4d4;
+		}
+
 		.reviews-list__text{
 			white-space: wrap;
 		}
