@@ -1171,6 +1171,7 @@ footer {
 		}
 		.tabs-navigation__item{
 			width: 100%;
+			max-width: 100%;
 		}
 		.tabs-content__abut-tabs{
 			padding: 31px 20.57px 30px 24.69px;
