@@ -972,6 +972,13 @@ footer {
 
 @media (max-width: 576px) {
 		/* -----------------------global */
+		.features,
+		.about,
+		.pricing,
+		.reviews,
+		.contact {
+			scroll-margin-top: 60.56px;
+		}
 		h1{
 			font-size: 36px;
 			padding-bottom: 46px;
@@ -1112,6 +1119,7 @@ footer {
 		.wrapper__social-media{
 			flex-wrap: wrap;
 			gap: 32px;
+			justify-content: center;
 		}
 		.social-media__title{
 			align-items: center;
