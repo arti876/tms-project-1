@@ -18,6 +18,10 @@ font-family: 'Raleway', sans-serif;
 	outline: none;
 }
 
+.menu__toggle {
+	display: none;
+}
+
 .wrapper {
 	max-width: 1170px;
 	padding: 0 15px;
@@ -55,13 +59,13 @@ h2::before {
 	background-color: #EC7979;
 	top: 100%;
 	left: 50%;
-	margin-left: -85px;
+	transform: translateX(-50%);
 }
 
 h1::before {
 	background-color: #ffffff;
 	left: 0;
-	margin-left: 0;
+	transform: translateX(0);
 }
 
 .design h2::before {
@@ -100,7 +104,7 @@ span {
 .title-form__input-list input,
 .contact-form input {
 	width: 100%;
-	min-height: 38px;
+	height: 38px;
 	border: none;
 	border-bottom: 1px solid #BDBDBD;
 	font-family: 'Open Sans', sans-serif;
@@ -150,7 +154,7 @@ button[type=submit]:active {
 	justify-content: center;
 	align-items: center;
 	width: 270px;
-	height: 58px;
+	min-height: 58px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	color: #FFF;
@@ -180,8 +184,7 @@ button[type=submit]:active {
 
 .about .btn-download a {
 	background-color: #EC7979;
-	border: none;
-	margin-top: 27px;
+	border: none; 
 }
 
 .about .btn-download a:hover {
@@ -250,7 +253,9 @@ header {
 
 .menu__list {
 	display: flex;
+	flex-wrap: wrap;
 }
+
 
 .menu__item a {
 	display: flex;
@@ -370,13 +375,9 @@ header {
 	height: 53.2px;
 }
 
-/* .wrapper__footer .social-media__icon svg {
-	transform: scale(.858)
-} */
-
 .social-media__icon svg {
-	width: 85%;
-	height: 85%;
+	width: 80%;
+	height: 80%;
 }
 
 .about {
@@ -393,7 +394,8 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 203px;
+	width: calc((203 * 100%) / 1170);
+	min-height: 40px;
 }
 
 .tabs-navigation__item--active {
@@ -404,8 +406,6 @@ header {
 }
 
 .tabs-navigation a {
-	width: 70px;
-	padding: 10px 0;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -425,12 +425,13 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	width: 570px;
+	width: calc((570 * 100%) / 1170);
 	padding: 48px 0 54px;
 }
 
 .tabs-content__abut-tabs p {
 	flex-grow: 1;
+	margin-bottom: 27px;
 }
 
 .tabs-content__abut-tabs h3 {
@@ -438,10 +439,15 @@ header {
 }
 
 .tabs-content__img {
-	max-width: 470px;
-}
+	flex: 0 0 calc((470 * 100%) / 1170);
+	min-height: 385px;
+	position: relative;
+} 
 
 .tabs-content__img img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -772,28 +778,11 @@ footer {
 	}
 }
 
-/* @media (max-width: 1174px) {
-	.title-form__container h4, span {
-		font-size: 18px;
-	}
-}
-
-@media (max-width: 1117px) {
-	.social-media__icon {
-		gap: 20px;
-	}
-	.social-media__icon a {
-		width: 64px;
-		height: 64px;
-	}
-} */
-
 @media (max-width: 1025px) {
 	/* -----------------------global */
 	*{
 		font-size: 14px;
 	}
-	/* -----------------------section-features */
 	h1{
 		font-size: 36px;
 		padding-bottom: 41.49px;
@@ -808,6 +797,11 @@ footer {
 	h4, span{
 		font-size: 18px;
 	}
+	h1::before,
+	h2::before{
+		width: 144px;
+	}
+	/* -----------------------section-features */
 	.features{
 		padding: 212px 0 106px;
 	}
@@ -828,14 +822,15 @@ footer {
 		width: 183.099px;
 		margin-bottom: 31.32px;
 	}
-	.btn-download a{
-		width: 183.099px;
-	}
 	.title-form__container h4, span{
 		font-size: 18px;
 	}
 	.title-form__container{
 		padding-top: 33px;
+	}
+	.features .btn-download a{
+		width: 183.099px;
+		height: 50px;
 	}
 	/* -----------------------section-social-media */
 	.social-media{
@@ -850,16 +845,18 @@ footer {
 	}
 	.social-media__icon a{
 		width: 64px;
+		height: 64px;
 	}
 	/* -----------------------section-about */
 	.about{
 		padding: 50px 0 60px;
 	}
-	.tabs-content__abut-tabs{
-		width: 482.894px;
+	.tabs-content{
+		gap: 26.21px;
+		margin-bottom: 96px;
 	}
-	.tabs-content__img{
-		max-width: 398.211px;
+	.tabs-navigation__item{
+		max-width: 156px;
 	}
 	.tabs-content__abut-tabs{
 		padding: 28px 0 50px;
@@ -867,21 +864,224 @@ footer {
 	.tabs-content__abut-tabs h3{
 		margin-bottom: 66px
 	}
-
+	.about .btn-download a{
+		width: 231.87px;
+	}
+	.awesome-advantages{
+		margin-top: 65.72px;
+		gap: 20px;
+	}
+	.awesome-advantages__icon{
+		width: 79.553px;
+		height: 79.553px;
+		margin-bottom: 62.72px;
+	}
+	.awesome-advantages__item h4{
+		margin-bottom: 37px;
+	}
+	.awesome-advantages__item {
+		width: calc((100% - 40px) / 3);
+	}
 	/* -----------------------section-pricing */
-
-
+	.pricing{
+		padding: 96px 0 50px;
+	}
+	.pricing-card{
+		margin-bottom: 49.74px;
+		gap: 20px;
+	}
+	.pricing-card__item {
+		width: calc((100% - 40px) / 3);
+	}
+	.pricing-card li:nth-child(1){
+		padding: 10px 0;
+	}
+	.pricing-card li:nth-child(2){
+		padding: 23px 0;
+	}
+	.pricing .pricing-card li:nth-child(1n+3){
+		font-size: 18px;
+		padding: 12px;
+	}
 	/* -----------------------section-reviews */
-
-
+	.reviews{
+		padding: 96px 0 57px;
+	}
+	.reviews-list{
+		margin-top: 32px;
+		gap: 20px ;
+	}
+	.reviews-list__item{
+		width: calc((100% - 40px) / 3);
+	}
+	.reviews-list__text{
+		padding: 50px 32px;
+	}
+	.customer-avatar{
+		width: 64px;
+		height: 64px;
+	}
+	.reviews-list__customer{
+		gap: 20px;
+	}
+	.customer-name{
+		gap: 14px;
+	}
 	/* -----------------------section-design */
-
-
+	.design, .contacts{
+		padding: 96px 0 50px;
+	}
+	.design .btn-download a{
+		width: 318px;
+		margin-top: 32px;
+	}
 	/* -----------------------section-contacts */
-
-
-	/* -----------------------section-contacts */
-
-
+	.contact-form{
+		margin-top: 72px;
+		gap: 20px;
+	}
+	.contact-form input{
+		height: 20px;
+	}
+	.contact-form__input-list, .contact-form__message{
+		width: calc((100% - 20px) / 2);
+	}
+	.contact-form button[type=submit]{
+		width: 318px;
+		margin-top: 30px;
+	}
 	/* -----------------------footer */
+	footer{
+		padding: 35px 0 30px;
+	}
+	.wrapper__footer{
+		gap: 38px;
+	}
+	.wrapper__footer .social-media__icon{
+		gap: 27px;
+	}
+	.wrapper__footer .social-media__icon a{
+		width: 45px;
+    height: 45px;
+	}
+}
+
+@media (max-width: 576px) {
+		/* -----------------------global */
+		*{
+			font-size: 14px;
+		}
+		h1{
+			font-size: 36px;
+			padding-bottom: 41.49px;
+			margin-bottom: 31px;
+		}
+		h2{
+			font-size: 24px;
+		}
+		h3{
+			font-size: 24px;
+		}
+		h4, span{
+			font-size: 18px;
+		}
+		h1::before,
+		h2::before{
+			width: 144px;
+		}
+		/* -----------------------header-menu-toogle */
+		.header__logo{
+			padding: 16.77px 0 16.32px 20px;
+			position: relative;
+			z-index: 1;
+		}
+		.header__menu{
+			display: none;
+		}
+		.menu__toggle{
+			display: block;
+		}
+		header .wrapper {
+			padding: 0;
+		}
+		#menu__toggle {
+			display: none;
+		}
+		.menu__btn {
+			display: flex;
+			align-items: center;
+			width: 24px;
+			height: 18px; 
+			position: fixed;
+			z-index: 11;
+			top: 19px;
+			right: 35px;
+			cursor: pointer;
+		}
+		.menu__btn > span,
+		.menu__btn > span::before,
+		.menu__btn > span::after {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background-color: #FFF;
+			z-index: 11;
+			transition-duration: .25s;
+		}
+		.menu__btn span::before {
+			content: "";
+			top: -7.5px;
+		}
+		.menu__btn span::after {
+			content: "";
+			top: 7.5px;
+		}
+		.menu-box {
+			display: block;
+			visibility: hidden;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #000000;
+			padding: 56px 20px 0 20px;
+		}
+		.menu-box a {
+			display: flex;
+			justify-content: center;
+			color: #FFF;
+			padding: 24px 0;
+		}
+		#menu__toggle:checked ~ .menu__btn > span {
+			transform: rotate(45deg);
+		}
+		#menu__toggle:checked ~ .menu__btn > span::before {
+			top: 0;
+			transform: rotate(0);
+		}
+		#menu__toggle:checked ~ .menu__btn > span::after {
+			top: 0;
+			transform: rotate(90deg);
+		}
+		#menu__toggle:checked ~ .menu-box {
+			visibility: visible;
+			left: 0;
+		}
+		/* -----------------------section-features */
+
+		/* -----------------------section-social-media */
+
+		/* -----------------------section-about */
+
+		/* -----------------------section-pricing */
+
+		/* -----------------------section-reviews */
+
+		/* -----------------------section-design */
+
+		/* -----------------------section-contacts */
+
+		/* -----------------------footer */
+
 }
