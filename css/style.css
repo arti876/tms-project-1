@@ -90,19 +90,19 @@ span {
 	color: #EC7979;
 }
 
-.title-form__container h4,
+.main-form__container h4,
 span {
 	text-transform: uppercase;
 }
 
-.title-form__input-list {
+.main-form__input-list {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	gap: 33px;
 }
 
-.title-form__input-list input,
+.main-form__input-list input,
 .contact-form input {
 	width: 100%;
 	height: 38px;
@@ -114,7 +114,7 @@ span {
 	padding-right: 5px;
 }
 
-.title-form__input-list input::placeholder {
+.main-form__input-list input::placeholder {
 	color: #BDBDBD;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
@@ -123,7 +123,7 @@ span {
 	transition: .3s;
 }
 
-.title-form__input-list input:focus::placeholder {
+.main-form__input-list input:focus::placeholder {
 	opacity: 0;
 }
 
@@ -315,11 +315,12 @@ header {
 .main-form {
 	display: flex;
 	flex-direction: column;
+	width: 470px;
+	min-width: 444px;
 	min-height: 450px;
-	min-width: calc((470 * 100%) / 1170);
 }
 
-.title-form__container {
+.main-form__container {
 	display: flex;
 	flex-direction: column;
 	gap: 73px;
@@ -768,20 +769,9 @@ footer {
 /* !social-media__icon:hover */
 
 /* ------------------АДАПТИВЫ---------------------------------------------- */
-*{
-	transition: .3s;
-}
-
 @media (max-width: 1301px) {
 	.header__logo {
 		transform: translateX(0);
-	}
-}
-
-
-@media (max-width: 1135px) {
-	.main-form{
-		min-width: 444px;
 	}
 }
 
@@ -829,10 +819,10 @@ footer {
 		width: 183.099px;
 		margin-bottom: 31.32px;
 	}
-	.title-form__container h4, span{
+	.main-form__container h4, span{
 		font-size: 18px;
 	}
-	.title-form__container{
+	.main-form__container{
 		padding-top: 33px;
 	}
 	.features .btn-download a{
@@ -977,9 +967,6 @@ footer {
 }
 
 @media (max-width: 941px) {
-	.main-form{
-		min-width: 358px;
-	}
 	.tabs-content__abut-tabs{
 		width: calc((500 * 100%) / 1170);
 	}
@@ -991,9 +978,6 @@ footer {
 @media (max-width: 874px) {
 	.features-title{
 		max-width: 350px;
-	}
-	.main-form{
-		min-width: 358px;
 	}
 }
 
@@ -1132,10 +1116,10 @@ footer {
 			min-width: 100%;
 			min-height: 381px;
 		}
-		.title-form__container h4, span{
+		.main-form__container h4, span{
 			font-size: 14px;
 		}
-		.title-form__container{
+		.main-form__container{
 			padding: 36px 28px 36px 20px;
 			gap: 35px;
 		}
